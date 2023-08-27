@@ -11,6 +11,21 @@ Repositório para armazenar resumos de GIT e GITHub do curso Versionamento de C�
 |-------|--------|
 |Gravando alterações no repositorio local|[Rsumo]()|
 
+## Configurações iniciais do Git
+- Para configurar usuario (Assim todas as alteração feitas seram deste usuário) 
+```
+$ git config --global user.name "T-Justino" 
+$ git config --global user.e-mail "t.justino.dev@gmail.com"
+```
+- Para consultar o nome da branch padrão
+```
+$ git config init.defaultBranch
+```
+- Para alterar  globlamente o nome da branch padrão para "main"
+```
+$ git config --global init.defaultBranch main
+
+```
 ## Criação de repositório local
 ```
 $ mkdir Nome_do_Repositorio
