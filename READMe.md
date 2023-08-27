@@ -64,3 +64,5 @@ $ git commit -m"mensagem de descrição da ação"
 $ git log // mostra historico com horarios de alteações e autor da alteração 
 // Ctrl + L (Limpa o console)
 ```
+## Observações
+- Atalho para o editor do GitHub ( . ) dentro do repositório que deseja modificar
