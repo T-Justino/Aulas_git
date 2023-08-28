@@ -32,6 +32,11 @@ $ mkdir Nome_do_Repositorio
 $ cd Nome_do_Repositorio
 $ git init
 ```
+## Enviando arquivos para repositorios
+- Após ter adicionado e committado
+```
+$ git push origin Nome_da_branch
+```
 ## Clonando repositório 
 
 - Copiar a URL
@@ -52,6 +57,31 @@ $ git clone URL Novo_nome
 ```
     $ git remote add origin URL_copiada
 ```
+## Trabalhando com branchs
+- Criando nova branch
+```
+$ git checkout -b Nome_Da_Branch
+```
+- Acessando branch
+```
+$ git checkout Nome_Da_Branch
+```
+- Listar as branchs existentes no repositório (esteja na branch main)
+```
+$ git branch
+```
+- Listar ultimos commits das branchs (esteja na branch main)
+```
+$ git branch -v
+```
+- Mesclando branhs (esteja na branch que deseja mesclar e chame a outra branch com o comando)
+```
+$ git merge Nome_da_Branch
+```
+- Deletando branch (Precisamos antes mesclar as branchs)
+```
+$ git branch -d Nome_da_Brant
+```
 ## Comandos recorrentes 
 ```
 $ cat   // exibe arquivo de texto 
@@ -64,5 +94,7 @@ $ git commit -m"mensagem de descrição da ação"
 $ git log // mostra historico com horarios de alteações e autor da alteração 
 // Ctrl + L (Limpa o console)
 ```
+## Explicando comandos 
+- O comando Git pull é uma junção dos comandos Git merce(mesclas as alterações) + git fetch (baixa as alterações)
 ## Observações
 - Atalho para o editor do GitHub ( . ) dentro do repositório que deseja modificar
