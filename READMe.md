@@ -24,7 +24,6 @@ $ git config init.defaultBranch
 - Para alterar  globlamente o nome da branch padrão para "main"
 ```
 $ git config --global init.defaultBranch main
-
 ```
 ## Criação de repositório local
 ```
@@ -35,7 +34,7 @@ $ git init
 ## Enviando arquivos para repositorios
 - Após ter adicionado e committado
 ```
-$ git push origin Nome_da_branch
+$ git push -u origin Nome_da_branch
 ```
 ## Clonando repositório 
 
@@ -56,6 +55,10 @@ $ git clone URL Novo_nome
 - Digitar o seguinte comando 
 ```
     $ git remote add origin URL_copiada
+```
+- Verificando vinculo com repositório remóto
+```
+    $ git remote -v
 ```
 ## Trabalhando com branchs
 - Criando nova branch
@@ -82,6 +85,43 @@ $ git merge Nome_da_Branch
 ```
 $ git branch -d Nome_da_Brant
 ```
+## Desfazendo alterações
+- Caso tem dado *"git init"* na pasta errada e queira desfazer o versionamento dela
+```
+    $ rm -rf .git
+```
+- Restaurar arquivo
+```
+    $ git restore Nome_do_Arquivo.extensao
+```
+- Corrigir nome do commit 
+```
+    $ git commit --amend -m"Novo Commit"
+```
+- Desfazer commit voltando para o anterior
+```
+   // Opção Soft   Remove o commit mas adiciona os arquivos dos commits     
+   posteriores na area de preparação:
+
+   $ git reset --soft Colar_hash_do_commit_anterior 
+
+   // Opção mixed  Remove o commit mas deixa os arquivos na area de trabalho 
+   indicando que precisamos adicionar na area de preparação:
+
+   $ git reset --mixed Colar_hash_do_commit_anterior
+
+   // Opção hard  simplesmente apaga as alterações do ultimo commit:
+
+   $ git reset --hard Colar_hash_do_commit_anterior 
+```
+- Histórico mais apronfundado sobre alterações dos commits
+```
+    $ git reflog 
+```
+- Remover arquivos da area de preparação
+``````
+    $ git reset Pasta/arquivo.extensao
+``````
 ## Comandos recorrentes 
 ```
 $ cat   // exibe arquivo de texto 
