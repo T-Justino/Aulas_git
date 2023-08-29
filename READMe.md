@@ -32,9 +32,13 @@ $ cd Nome_do_Repositorio
 $ git init
 ```
 ## Enviando arquivos para repositorios
-- Após ter adicionado e committado
+- Após ter adicionado e committado (repositório local para remoto)
 ```
 $ git push -u origin Nome_da_branch
+```
+- Após ter adicionado e committado (repositório remoto para local)
+```
+$ git pull
 ```
 ## Clonando repositório 
 
