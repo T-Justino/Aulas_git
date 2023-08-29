@@ -33,8 +33,13 @@ $ git init
 ```
 ## Enviando arquivos para repositorios
 - Após ter adicionado e committado (repositório local para remoto)
+- esse "-u" faz a configuração da origin com branch main como padrão 
 ```
-$ git push -u origin Nome_da_branch
+$ git push -u origin Nome_da_branch  // utilizar somente no primeiro envio
+```
+- Após ter adicionado e committado (repositório local para remoto)
+```
+$ git push -u origin Nome_da_branch  // utilizar somente no primeiro envio
 ```
 - Após ter adicionado e committado (repositório remoto para local)
 ```
